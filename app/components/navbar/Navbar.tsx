@@ -3,20 +3,58 @@ import { NavLink } from 'react-router-dom';
 
 import routes from '../../constants/routes.json';
 import styles from './Navbar.scss';
-import AppButton from '../utils/AppButton';
+//import AppButton from '../utils/AppButton';
 
 const Navbar = () => {
   return (
-    <nav className={styles.nav}>
-      <NavLink
-        to={routes.HOME}
-        activeClassName={styles.active}
-        className={styles['nav-button']}
-        exact={true}
-      >
-        ACCUEIL
-      </NavLink>
-    </nav>
+    <div className={styles['nav-pos']}>
+      <nav className={styles.nav}>
+        <NavLink
+          to={routes.HOME}
+          activeClassName={styles['nav-button-active']}
+          className={styles['nav-button']}
+          exact={true}
+        >
+          ACCUEIL
+        </NavLink>
+
+        <NavLink
+          to={routes.HOME}
+          //activeClassName={styles.active}
+          className={styles['nav-button']}
+          exact={true}
+        >
+          INFORMATIONS
+        </NavLink>
+
+        <NavLink
+          to={routes.HOME}
+          //activeClassName={styles.active}
+          className={styles['nav-button-jouer']}
+          exact={true}
+        >
+          JOUER
+        </NavLink>
+
+        <NavLink
+          to={routes.HOME}
+          //activeClassName={styles.active}
+          className={styles['nav-button']}
+          exact={true}
+        >
+          AIDE
+        </NavLink>
+
+        <NavLink
+          to={routes.HOME}
+          //activeClassName={styles.active}
+          className={styles['nav-button']}
+          exact={true}
+          >
+          PARAMETRES
+        </NavLink>
+      </nav>
+    </div>
   );
 };
 

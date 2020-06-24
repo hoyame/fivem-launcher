@@ -1,0 +1,70 @@
+* {
+  font-family: 'Jost', sans-serif;
+}
+
+.nav-pos {
+  position: absolute;
+  top: 630px;
+  left: 280px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-text {
+  color: rgba(236, 236, 236, 0.836);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition-duration: 565ms;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.89);
+  }
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.nav-button {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: .70rem;
+  margin: 0 .25rem;
+  color: rgb(114, 110, 110);
+  line-height: 2;
+  text-align: center;
+  border-radius: 6px;
+  transition-duration: 565ms;
+
+  &:hover {
+    background-color: rgba(22, 21, 21, 0.589);
+    color: rgba(236, 236, 236, 0.836);
+  }
+}
+
+.nav-button-active {
+  background-color: #383838;
+  color: #fff;
+}
+
+.nav-button-jouer {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: .70rem;
+  margin: 0 .25rem;
+  color: rgb(114, 110, 110);
+  line-height: 2;
+  text-align: center;
+  border-radius: 6px;
+  transition-duration: 565ms;
+  background-color: #e6ebf4;
+
+  &:hover {
+    color: rgb(2, 2, 2);
+  }
+
+}
+
