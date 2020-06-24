@@ -19,7 +19,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to={routes.HOME}
+          to={routes.INFORMATIONS}
           //activeClassName={styles.active}
           className={styles['nav-button']}
           exact={true}
@@ -37,7 +37,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to={routes.HOME}
+          to={routes.AIDE}
           //activeClassName={styles.active}
           className={styles['nav-button']}
           exact={true}
@@ -46,7 +46,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to={routes.HOME}
+          to={routes.SETTINGS}
           //activeClassName={styles.active}
           className={styles['nav-button']}
           exact={true}

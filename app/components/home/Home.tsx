@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Home.scss';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
-
+      home
     </div>
   );
 };
 
-export default Home;
+export default HomePage;

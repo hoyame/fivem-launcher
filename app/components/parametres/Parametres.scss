@@ -1,0 +1,46 @@
+.home-profile {
+  position: relative;
+}
+
+.home-img {
+  position: absolute;
+  top: 92.5px;
+}
+
+.home-profile-img {
+  position: absolute;
+  top: -180px;
+  left: 940px;
+
+  height: 250px;
+  width: 250px;
+
+  border-radius: 50%;
+}
+
+.home-profile-welcome {
+  position: absolute;
+  top: 35px;
+  left: 960px;
+  float: right;
+
+  font-family: 'SFUIDisplayBold' !important;
+  font-size: 48px;
+  font-weight: 20;
+
+  color: white;
+}
+
+.home-profile-pseudo {
+  position: absolute;
+  top: 95px;
+  left: 960px;
+  float: right;
+
+  font-family: 'SFUIDisplayBold' !important;
+  font-size: 50px;
+  font-weight: 600;
+
+  color: white;
+}
+
