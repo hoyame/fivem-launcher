@@ -20,7 +20,7 @@ const Navbar = () => {
 
         <NavLink
           to={routes.INFORMATIONS}
-          //activeClassName={styles.active}
+          activeClassName={styles['nav-button-active']}
           className={styles['nav-button']}
           exact={true}
         >
@@ -29,7 +29,6 @@ const Navbar = () => {
 
         <NavLink
           to={routes.HOME}
-          //activeClassName={styles.active}
           className={styles['nav-button-jouer']}
           exact={true}
         >
@@ -38,7 +37,7 @@ const Navbar = () => {
 
         <NavLink
           to={routes.AIDE}
-          //activeClassName={styles.active}
+          activeClassName={styles['nav-button-active']}
           className={styles['nav-button']}
           exact={true}
         >
@@ -47,7 +46,7 @@ const Navbar = () => {
 
         <NavLink
           to={routes.SETTINGS}
-          //activeClassName={styles.active}
+          activeClassName={styles['nav-button-active']}
           className={styles['nav-button']}
           exact={true}
           >
