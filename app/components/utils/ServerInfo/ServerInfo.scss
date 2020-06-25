@@ -1,0 +1,45 @@
+.server-info {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  display: flex;
+  flex-direction: wrap;
+
+  border-radius: 10px;
+  background-color: #383838;
+
+  transition-duration: 600ms;
+
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.server-info-img {
+  height: 60px;
+  width: 60px;
+
+  margin-top: 4.5px;
+  margin-left: 5px;
+
+  border-radius: 50%;
+}
+
+.server-info-name {
+  position: relative;
+  top: 5px;
+
+  color: rgb(153, 153, 153);
+
+  font-size: 25px;
+  font-weight: 400;
+
+  //padding-top: 5px;
+
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 26px;
+
+}
