@@ -1,0 +1,72 @@
+.user-info {
+  position: absolute;
+  top: 16px;
+  left: 1010px;
+
+  height: 70px;
+  width: 195px;
+
+  border-radius: 7.5px;
+  background-color: #383838;
+}
+
+.user-info-name {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+
+  font-size: 22.5px;
+  color: #e6ebf494;
+
+}
+
+.user-info-discord {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+
+  font-size: 16px;
+  color: #7e7e7eb6;
+}
+
+.user-info-disconnect {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+
+  color: rgba(255, 0, 0, 0.397);
+  transition-duration: 600ms;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+}
+
+.user-logo {
+  position: absolute;
+  top: 16px;
+  left: 1165.5px;
+
+  height: 70px;
+  width: 70px;
+
+  border-radius: 50%;
+  background-color: rgba(46, 46, 46, 0.781);
+  transition-duration: 600ms;
+
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.user-logo-img {
+  height: 60px;
+  width: 60px;
+
+  margin: 5px;
+  border-radius: 50%;
+
+  transition-duration: 600ms;
+}
+
