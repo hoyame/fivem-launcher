@@ -1,46 +1,58 @@
-.home-profile {
-  position: relative;
-}
-
-.home-img {
+.home-profile-component {
   position: absolute;
-  top: 92.5px;
+  top: 120px;
+  left: 960px;
+
+  height: 400px;
+  width: 250px;
+
+  border-radius: 12.5px;
+  background-color: rgba(46, 46, 46, 0.781);
 }
 
 .home-profile-img {
-  position: absolute;
-  top: -180px;
-  left: 940px;
-
-  height: 250px;
-  width: 250px;
-
+  height: 175px;
+  width: 175px;
+  margin: 37px;
   border-radius: 50%;
+
+  margin-top: 65px;
 }
 
-.home-profile-welcome {
-  position: absolute;
-  top: 35px;
-  left: 960px;
-  float: right;
+.home-profile-name {
+  margin-top: -10px;
 
-  font-family: 'SFUIDisplayBold' !important;
-  font-size: 48px;
-  font-weight: 20;
+  color: rgb(114, 110, 110);
 
-  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.home-profile-pseudo {
-  position: absolute;
-  top: 95px;
-  left: 960px;
-  float: right;
+.home-profile-discord {
+  margin-top: -20px;
 
-  font-family: 'SFUIDisplayBold' !important;
-  font-size: 50px;
-  font-weight: 600;
+  color: rgba(88, 88, 88, 0.753);
 
-  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.home-welcome-component {
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+.home-welcome-text {
+  font-size: 80px;
+  color: #e6ebf4
+}
+
+.home-welcome-name {
+  margin-top: -60px;
+  font-size: 80px;
+  color: rgb(114, 110, 110);
 }
 
