@@ -1,46 +1,111 @@
-.home-profile {
-  position: relative;
-}
-
-.home-img {
+.pagename {
   position: absolute;
-  top: 92.5px;
+  top: 115px;
+  left: 15px;
+  color: #e6ebf494;
+  transition-duration: 565ms;
+
+  font-size: 30px;
+
 }
 
-.home-profile-img {
+.informations-page-props {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 120px;
+
+  transition-duration: 565ms;
+}
+
+.informations-props-component {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 55px;
+  padding: 0px 15px 0px 15px;
+
+  height: 50px;
+  width: 650px;
+
+  transition-duration: 565ms;
+
+  border-radius: 7.5px;
+  background-color: #383838;
+}
+
+.informations-props-title {
+  color: #e6ebf494;
+  font-size: 30px;
+  margin-top: 9px;
+  transition-duration: 565ms;
+}
+
+.informations-props-data {
+  color: #e6ebf452;
+
+  font-size: 25px;
+  font-weight: 200;
+
+  margin-top: 11px;
+  margin-left: auto;
+
+  transition-duration: 565ms;
+}
+
+.informations-buttons-props {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  transition-duration: 565ms;
+}
+
+.informations-buttons-component {
+  font-size: 2.25rem;
+  text-decoration: none;
+  padding: .90rem;
+  margin: 0 .25rem;
+  color: rgb(114, 110, 110);
+  line-height: 0.025;
+  text-align: center;
+  border-radius: 6px;
+  transition-duration: 565ms;
+  background-color: #e6ebf4;
+
+  margin-top: 10px;
+
+  &:hover {
+    color: rgb(2, 2, 2);
+    opacity: 90%;
+
+    cursor: pointer;
+  }
+}
+
+.informations-refresh-button {
   position: absolute;
-  top: -180px;
-  left: 940px;
+  top: 175px;
+  left: 12px;
 
-  height: 250px;
-  width: 250px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: .90rem;
+  margin: 0 .25rem;
+  color: rgb(114, 110, 110);
+  line-height: 0.05;
+  text-align: center;
+  border-radius: 6px;
+  transition-duration: 565ms;
+  background-color: #e6ebf4;
 
-  border-radius: 50%;
+  margin-top: 10px;
+
+  &:hover {
+    color: rgb(2, 2, 2);
+    opacity: 90%;
+
+    cursor: pointer;
+  }
 }
-
-.home-profile-welcome {
-  position: absolute;
-  top: 35px;
-  left: 960px;
-  float: right;
-
-  font-family: 'SFUIDisplayBold' !important;
-  font-size: 48px;
-  font-weight: 20;
-
-  color: white;
-}
-
-.home-profile-pseudo {
-  position: absolute;
-  top: 95px;
-  left: 960px;
-  float: right;
-
-  font-family: 'SFUIDisplayBold' !important;
-  font-size: 50px;
-  font-weight: 600;
-
-  color: white;
-}
-
