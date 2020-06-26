@@ -2,5 +2,6 @@
   "HOME": "/",
   "INFORMATIONS": "/informations",
   "SETTINGS": "/settings",
-  "AIDE": "/aide"
+  "AIDE": "/aide",
+  "CONTENU": "/contenu"
 }
