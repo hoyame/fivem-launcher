@@ -36,12 +36,12 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to={routes.AIDE}
+          to={routes.CONTENU}
           activeClassName={styles['nav-button-active']}
           className={styles['nav-button']}
           exact={true}
         >
-          AIDE
+          CONTENU
         </NavLink>
 
         <NavLink
