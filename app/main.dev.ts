@@ -129,3 +129,9 @@ app.on('activate', () => {
   // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) createWindow();
 });
+
+export const setProgressBarBDT = () => {
+  const win = new BrowserWindow()
+
+  win.setProgressBar(0.5)
+}
