@@ -1,46 +1,63 @@
-.home-profile {
-  position: relative;
-}
-
-.home-img {
+.parametres-associer-comptes-container {
   position: absolute;
-  top: 92.5px;
+  top: 150px;
+  left: 15px;
+
+  height: 150px;
+  width: 400px;
+
+  border-radius: 7.5px;
+  background-color: rgb(54, 54, 54);
 }
 
-.home-profile-img {
+.parametres-associer-comptes-title {
+  margin-top: 12.5px;
+  margin-left: 12.5px;
+
+  font-size: 20px;
+
+  color: rgb(156, 156, 156);
+}
+
+.parametres-chemins-options {
   position: absolute;
-  top: -180px;
-  left: 940px;
+  top: 135px;
+  left: 435px;
 
-  height: 250px;
-  width: 250px;
+  height: 420px;
+  width: 800px;
 
-  border-radius: 50%;
+  border-radius: 7.5px;
+  //background-color: rgb(54, 54, 54);
 }
 
-.home-profile-welcome {
-  position: absolute;
-  top: 35px;
-  left: 960px;
-  float: right;
+.parametres-chemins-options-container {
+  height: 60px;
+  width: 780px;
 
-  font-family: 'SFUIDisplayBold' !important;
-  font-size: 48px;
-  font-weight: 20;
+  margin: 10px;
 
-  color: white;
+  border-radius: 7.5px;
+  background-color: rgb(54, 54, 54);
 }
 
-.home-profile-pseudo {
-  position: absolute;
-  top: 95px;
-  left: 960px;
-  float: right;
+.parametres-chemins-options-title {
+  
 
-  font-family: 'SFUIDisplayBold' !important;
-  font-size: 50px;
-  font-weight: 600;
+  margin-top: 15px;
+  margin-left: 15px;
 
-  color: white;
+  font-size: 25px;
+
+  color: rgb(145, 145, 145);
 }
 
+.parametres-chemins-options-content {
+  margin-top: -50px;
+  margin-right: 15px;
+
+  font-size: 20px;
+  text-align: end;
+
+  color: rgb(39, 39, 39);
+}
