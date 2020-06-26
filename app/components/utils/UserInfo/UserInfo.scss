@@ -55,9 +55,6 @@
   background-color: rgba(46, 46, 46, 0.781);
   transition-duration: 600ms;
 
-  &:hover {
-    opacity: 50%;
-  }
 }
 
 .user-logo-img {
@@ -66,7 +63,10 @@
 
   margin: 5px;
   border-radius: 50%;
-
   transition-duration: 600ms;
+
+  &:hover {
+    opacity: 50%;
+  }
 }
 
