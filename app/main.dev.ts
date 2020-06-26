@@ -130,8 +130,3 @@ app.on('activate', () => {
   if (mainWindow === null) createWindow();
 });
 
-export const setProgressBarBDT = () => {
-  const win = new BrowserWindow()
-
-  win.setProgressBar(0.5)
-}
