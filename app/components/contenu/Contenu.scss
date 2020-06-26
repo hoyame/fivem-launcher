@@ -52,8 +52,7 @@
   }
 }
 
-
-.content-download-button {
+.contenu-download-button {
   position: absolute;
   top: 437.5px;
   left: 482.5px;
@@ -79,7 +78,81 @@
   }
 }
 
+.contenu-progressbar-back {
+  position: absolute;
+  top: 540px;
+  left: 15px;
 
+  height: 50px;
+  width: 600px;
 
+  border-radius: 12.5px;
+  background-color: rgb(66, 66, 66);
+}
 
+.contenu-progressbar-content {
+  position: absolute;
+  top: 540px;
+  left: 15px;
 
+  height: 50px;
+  width: 400px;
+
+  border-radius: 12.5px;
+  background-color: rgb(3, 119, 185);
+
+  transition-duration: 600ms;
+}
+
+.contenu-progressbar-pourcentage {
+  margin-top: 15px;
+  margin-right: 3%;
+
+  text-align: end;
+  font-size: 17.5px;
+  color: rgb(214, 214, 214);
+  transition-duration: 600ms;
+}
+
+.contenu-liens-utiles-component {
+  height: 410px;
+  width: 580px;
+
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.contenu-liens-utiles-props {
+  height: 50px;
+
+  margin-bottom: 10px;
+  border-radius: 7.5px;
+  background-color: rgb(61, 61, 61);
+}
+
+.contenu-liens-utiles-props-title {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+
+  font-size: 20px;
+
+  color: rgba(255, 255, 255, 0.575);
+}
+
+.contenu-liens-utiles-props-red {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 555px;
+
+  font-size: 20px;
+  text-align: end;
+
+  color: rgba(163, 163, 163, 0.575);
+
+  transition-duration: 600ms;
+  &:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+}

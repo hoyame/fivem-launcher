@@ -2,7 +2,6 @@ import React from 'react';
 
 import ServerInfo from '../utils/ServerInfo/ServerInfo'
 import UserInfo from '../utils/UserInfo/UserInfo';
-import { setProgressBarBDT } from '../../main.dev';
 
 import styles from './Contenu.scss'
 import PageInfo from '../utils/PageInfo/PageInfo';
@@ -11,6 +10,11 @@ interface IOptionsDownload {
   name: string;
   link?: string;
   onChecked?: () => void;
+}
+
+interface IContentLinks {
+  name: string;
+  link?: string;
 }
 
 const OptionsDownload : IOptionsDownload[] = [
@@ -24,9 +28,15 @@ const OptionsDownload : IOptionsDownload[] = [
   { name: 'Modd 8'}
 ]
 
-const DownloadProgressBar = () => {
-  setProgressBarBDT()
-}
+const ContentLinks : IContentLinks[] = [
+  { name: 'Comment installer un mod ?'},
+  { name: 'Le telechargement est long, d\'ou vien le probleme ?'},
+  { name: 'Mon ordinateur supporte les mods ?'},
+  { name: 'Comment supprimer un mod ?'},
+  { name: 'D\'ou proviennent les mods ?'},
+  { name: 'Je peux aller sur GTAOnline avec les mods ?'},
+  { name: 'Credits'},
+]
 
 const ContenuPage = () => {
   const OptionsDownloadProps : React.FC<IOptionsDownload> = (props: IOptionsDownload) => {
@@ -38,11 +48,28 @@ const ContenuPage = () => {
     );
   }
 
+  const ContentLinksProps : React.FC<IContentLinks> = (props: IContentLinks) => {
+    return (
+      <div className={styles['contenu-liens-utiles-props']}>
+        <p className={styles['contenu-liens-utiles-props-title']}>{props.name}</p>
+        <p className={styles['contenu-liens-utiles-props-red']}>{">"}</p>
+      </div>
+    );
+  }
+
   const GetOptionsDownload = () => {
     return OptionsDownload.map((item, k) => {
       return (
         <OptionsDownloadProps key={k} {...item} />
       );
+    })
+  }
+
+  const GetContentLinks = () => {
+    return ContentLinks.map((item, k) => {
+      return (
+        <ContentLinksProps key={k} {...item} />
+      )
     })
   }
 
@@ -57,10 +84,20 @@ const ContenuPage = () => {
         <p className={styles['contenu-telechargement-description']}>Options</p>
         {GetOptionsDownload()}
 
-        <div className={styles['content-download-button']}>
-          <p onClick={() => DownloadProgressBar()}>Download</p>
+        <div className={styles['contenu-download-button']}>
+          <p onClick={() => null}>Download</p>
         </div>
       </div>
+
+      <div className={styles['contenu-progressbar-back']}></div>
+      <div className={styles['contenu-progressbar-content']}>
+        <p className={styles['contenu-progressbar-pourcentage']}>75%</p>
+      </div>
+
+      <div className={styles['contenu-liens-utiles-component']}>
+        {GetContentLinks()}
+      </div>
+
     </React.Fragment>
   );
 }
