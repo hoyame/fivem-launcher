@@ -7,6 +7,7 @@ import HomePage from './components/home/Home';
 import InformationsPage from './components/informations/Informations';
 import AidePage from './components/aide/Aide';
 import SettingsPage from './components/parametres/Parametres';
+import ContenuPage from './components/contenu/Contenu';
 
 import './app.global.css';
 
@@ -19,6 +20,7 @@ export default function Routes() {
           <Route path={routes.INFORMATIONS} exact component={InformationsPage} />
           <Route path={routes.AIDE} exact component={AidePage} />
           <Route path={routes.SETTINGS} exact component={SettingsPage} />
+          <Route path={routes.CONTENU} exact component={ContenuPage} />
         </Switch>
       </App>
     </div>
