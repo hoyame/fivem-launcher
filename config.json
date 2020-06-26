@@ -1,6 +1,31 @@
 {
-  "serverName": "VMLife",
-  "serverIP": "127.0.0.1",
-  "serverPort": "30120"
+  "serverName": "GTALife",
+  "serverImgLink": "",
+  "serverCount": "2",
+
+  "serverOne": {
+    "Name": "Whitelist",
+    "IP": "127.0.0.1",
+    "Port": "30120"
+  },
+
+  "serverTwo": {
+    "Name": "Freeacces",
+    "IP": "127.0.0.1",
+    "Port": "30120"
+  },
+
+  "informationsLinks": {
+    "Discord": "",
+    "Vote": "",
+    "Reglement": "",
+    "Wiki": "",
+    "Don": "",
+    "Twitter": "",
+    "Boutique": "",
+    "Site": ""
+  }
 
 }
+
+
