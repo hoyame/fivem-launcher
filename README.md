@@ -12,3 +12,4 @@
 <a href="http://hits.dwyl.com/corazon2/Launcher-FiveM"><img src="http://hits.dwyl.com/corazon2/Launcher-FiveM.svg"      alt="license"></a> 
 
 # Launcher pour serveur FiveM
+Bientot un tuto pour expliquer comment le config/utiliser, des que le developpement de ce projet est terminée 
