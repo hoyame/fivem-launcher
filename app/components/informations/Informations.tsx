@@ -38,20 +38,20 @@ const InformationsButtonsPropsTwo : IInformationsButtons[] = [
   { title: 'Site', onClick: () => console.log('1') },
 ]
 
+export const ButtonProps: React.FC<IInformationsButtons> = (props: IInformationsButtons) => {
+  return (
+    <div className={styles['informations-buttons-component']}>
+      <p onClick={props.onClick}>{props.title}</p>
+    </div>
+  );
+}
+
 const InformationsPage = () => {
   const InformationPageProps: React.FC<IInformations> = (props: IInformations) => {
     return (
       <div className={styles['informations-props-component']}>
         <p className={styles['informations-props-title']}>{props.title}</p>
         <p className={styles['informations-props-data']}>{props.data}</p>
-      </div>
-    );
-  }
-
-  const InformationButtonsProps: React.FC<IInformationsButtons> = (props: IInformationsButtons) => {
-    return (
-      <div className={styles['informations-buttons-component']}>
-        <p onClick={props.onClick}>{props.title}</p>
       </div>
     );
   }
@@ -67,7 +67,7 @@ const InformationsPage = () => {
   const GetInformationButtonsProps = () => {
     return InformationsButtonsProps.map((item, k) => {
       return (
-        <InformationButtonsProps key={k} {...item} />
+        <ButtonProps key={k} {...item} />
       );
     })
   }
@@ -75,7 +75,7 @@ const InformationsPage = () => {
   const GetInformationButtonsPropsTwo = () => {
     return InformationsButtonsPropsTwo.map((item, k) => {
       return (
-        <InformationButtonsProps key={k} {...item} />
+        <ButtonProps key={k} {...item} />
       );
     })
   }
