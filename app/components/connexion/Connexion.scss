@@ -1,3 +1,13 @@
+.connexion-title {
+  margin-top: -20px;
+
+  font-size: 30px;
+  text-align: center;
+
+  color: rgb(153, 153, 153);
+
+}
+
 .connexion-component {
   position: relative;
   top: -30px;
@@ -18,3 +28,29 @@
   background-color: rgb(77, 77, 77);
 }
 
+.connexion-photo-container {
+  position: absolute;
+  top: 110px;
+  left: 975px;
+
+  height: 200px;
+  width: 200px;
+
+  border-radius: 5%;
+}
+
+input {
+  margin: 6px;
+  margin-left: 15px;
+
+  height: 27.5px;
+  width: 92.5%;
+
+  font-size: 22.5px;
+  border: none;
+  background-color: rgb(77, 77, 77);
+}
+
+input[type=text] {
+  color: rgb(153, 153, 153);
+}
