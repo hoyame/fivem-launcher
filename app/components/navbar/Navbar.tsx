@@ -52,6 +52,13 @@ const Navbar = () => {
           >
           PARAMETRES
         </NavLink>
+
+        <NavLink
+        to={routes.CONNEXION}
+        exact={true}
+        >
+        Connexion
+      </NavLink>
       </nav>
     </div>
   );
