@@ -3,5 +3,6 @@
   "INFORMATIONS": "/informations",
   "SETTINGS": "/settings",
   "AIDE": "/aide",
-  "CONTENU": "/contenu"
+  "CONTENU": "/contenu",
+  "CONNEXION": "/connexion"
 }
