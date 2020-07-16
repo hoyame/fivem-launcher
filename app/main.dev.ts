@@ -9,10 +9,16 @@
  * `./app/main.prod.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, shell } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
+
+const DownloadManager = require("electron-download-manager");
+
+
+DownloadManager.register({downloadFolder: app.getPath("downloads") + "/my-app"});;
+
 
 export default class AppUpdater {
   constructor() {
@@ -70,6 +76,30 @@ const createWindow = async () => {
         : {
             preload: path.join(__dirname, 'dist/renderer.prod.js')
           }
+  });
+
+  var links = [
+    //"https://files.teamspeak-services.com/releases/client/3.5.3/TeamSpeak3-Client-win64-3.5.3.exe",
+    //"https://www.saltmine.de/saltychat/downloads/2.0.0",
+    "https://teamspeak.com/user/themes/teamspeak/images/ts-share-image.jpg"
+];
+
+  //Bulk file download
+  DownloadManager.bulkDownload({
+      urls: links,
+      path: "alynia"
+  }, function (error: any, finished: string, errors: string) {
+      if (error) {
+          console.log("finished: " + finished);
+          console.log("errors: " + errors);
+          return;
+      }
+
+      console.log("all finished");
+
+
+
+      shell.openItem('c:\\ggg.txt');
   });
 
   mainWindow.webContents.on('new-window', (event: any, url) => {
