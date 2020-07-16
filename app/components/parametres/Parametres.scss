@@ -22,10 +22,10 @@
 .parametres-chemins-options {
   position: absolute;
   top: 135px;
-  left: 435px;
+  left: 10px;
 
   height: 420px;
-  width: 800px;
+  width: 1000px;
 
   border-radius: 7.5px;
   //background-color: rgb(54, 54, 54);
@@ -33,19 +33,21 @@
 
 .parametres-chemins-options-container {
   height: 60px;
-  width: 780px;
+  width: 950px;
 
-  margin: 10px;
+  margin: 5px;
 
   border-radius: 7.5px;
   background-color: rgb(54, 54, 54);
 }
 
 .parametres-chemins-options-title {
-  
+  position: relative;
+  top: 15px;
+  left: 15px;
 
-  margin-top: 15px;
-  margin-left: 15px;
+  //margin-top: 15px;
+  //margin-left: 15px;
 
   font-size: 25px;
 
@@ -53,11 +55,99 @@
 }
 
 .parametres-chemins-options-content {
-  margin-top: -50px;
-  margin-right: 15px;
+  position: relative;
+  top: -35px;
+  //left: 15px;
+  right: 15px;
 
   font-size: 20px;
   text-align: end;
 
-  color: rgb(39, 39, 39);
+  color: rgb(94, 94, 94);
+}
+
+.parametres-chemins-options-button-confirm {
+  position: relative;
+  top: -96px;
+  left: 955px;
+
+  height: 29px;
+  width: 100px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: .90rem;
+  margin: 0 .25rem;
+  color: rgb(114, 110, 110);
+  line-height: 0.05;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  transition-duration: 565ms;
+  background-color: #e6ebf4;
+
+  margin-top: 10px;
+
+  &:hover {
+    color: rgb(212, 212, 212);
+    background-color: #888888;
+
+    opacity: 90%;
+
+    cursor: pointer;
+  }
+}
+
+.parametres-chemins-options-button-description {
+  margin-top: 14px;
+}
+
+
+.parametres-chemins-options-button-config {
+  position: relative;
+  top: -164px;
+  left: 1090px;
+  height: 29px;
+  width: 100px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: .90rem;
+  margin: 0 .25rem;
+  color: rgb(114, 110, 110);
+  line-height: 0.05;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  transition-duration: 565ms;
+  background-color: #e6ebf4;
+
+  margin-top: 10px;
+
+  &:hover {
+    color: rgb(212, 212, 212);
+    background-color: #888888;
+
+    cursor: pointer;
+  }
+}
+
+.parametres-description {
+  margin-top: 25px;
+  margin-left: 5px;
+
+  height: 180px;
+  width: 1222.5px;
+
+  align-items: center;
+
+  border-radius: 7.5px;
+  background-color: rgb(54, 54, 54);
+}
+
+.parametres-description-text {
+  align-items: center;
+  text-align: center;
+  color: rgb(156, 156, 156);
+
+  padding: 25px;
+  font-size: 33px;
 }
