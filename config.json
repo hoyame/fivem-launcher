@@ -1,5 +1,5 @@
 {
-  "serverName": "GTALife",
+  "serverName": "VMLife",
   "serverImgLink": "",
   "serverCount": "2",
 
@@ -12,7 +12,7 @@
   "serverTwo": {
     "Name": "Freeacces",
     "IP": "127.0.0.1",
-    "Port": "30120"
+    "Port": "30130"
   },
 
   "informationsLinks": {
