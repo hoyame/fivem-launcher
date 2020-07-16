@@ -15,7 +15,6 @@ interface IInformationsButtons {
   onClick?: () => void;
 }
 
-
 const InformationsProps :  IInformations[] = [
   { title: 'Version', data: 'v.0.0.1' },
   { title: 'Joueurs Connectées', data: '128/128' },
